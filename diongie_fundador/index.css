@@ -1,0 +1,64 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    border: 2px solid red;
+    border-radius: 50px 0px; 
+}
+
+/* nested CSS */
+.navbar {
+    grid-column: 1/9;
+
+    a{
+        text-decoration: none;
+        padding: 10px 15px 10px 15px;
+        border-radius: 10px;
+        color: rgb(33, 30, 44);
+        transition: 0.5s ease-in-out;
+        background-color: aquamarine;
+        border: 3px solid black;
+    }
+
+    a:hover{
+        color: white;
+        background-color: brown;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    li{
+        padding-inline: 2rem;
+    }
+}
+
+/* universal */
+ul li {
+    list-style: none;
+}
+
+.image-section {
+    grid-column: 1/4;
+    height: 80dvh;
+
+    #fb-icon{
+        color: blue;
+    }
+
+    #ig-icon{
+        background-image: linear-gradient(to right top, #faf918, #ffc519, #ff8f4d, #ff5e7b, #ff47a5, #ff3cba, #f937d2, #ed3aec, #dd2bf0, #cb1cf5, #b60cfa, #9d00ff);
+    }
+}
+
+.text-section {
+    grid-column: 4/9;
+    height: 80dvh;
+}
+
+/* .container>div {
+    border: 2px solid red;
+} */
